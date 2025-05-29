@@ -40,7 +40,7 @@ def rate_limit(max_calls, time_window):
                 # Add the current call time
                 calls.append(now)
                 # Call the original function
-                return func(*args, **kwargs)
+                return func(*args, **kwargs) 
         return wrapper
     return decorator
 
